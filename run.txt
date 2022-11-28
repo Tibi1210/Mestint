@@ -1,0 +1,21 @@
+File forítása:
+	javac -cp game_engine.jar SamplePlayer.java
+
+Ágens futtatása a RandomPlayer ellen:
+	java -jar game_engine.jar 0 game.quoridor.QuoridorGame 1234567890 1000 game.quoridor.players.RandomPlayer SamplePlayer
+
+Ágens futtatása a Magam ellen:
+	java -jar game_engine.jar 10 game.quoridor.QuoridorGame 1234567890 1000 SamplePlayer game.quoridor.players.HumanPlayer
+
+FINAL: 
+	java -Xmx2G -jar game_engine.jar 0 game.quoridor.QuoridorGame 1234567890 5000 game.quoridor.players.BlockRandomPlayer SamplePlayer
+
+
+
+WIN:
+	0 SamplePlayer (6,2) color: X <- 0 0.0 1000000000
+	1 game.quoridor.players.HumanPlayer (0,4) color: O <- 1 1.0 9223372036854775797
+
+GOOSE: 
+	0 SamplePlayer (8,2) color: X <- 0 1.0 1000000000
+	1 game.quoridor.players.HumanPlayer (2,3) color: O <- 1 0.0 9223372036854775797
